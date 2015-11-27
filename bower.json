@@ -1,0 +1,24 @@
+{
+  "name": "cita-flex",
+  "homepage": "https://github.com/maliMirkec/cita-flex",
+  "authors": [
+    "maliMirkec <malimirkeccita@gmail.com>"
+  ],
+  "description": "Flexbox grid system for modern web app.",
+  "main": "cita-flex.css",
+  "moduleType": [],
+  "keywords": [
+    "cita",
+    "flex",
+    "flexbox",
+    "grid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
