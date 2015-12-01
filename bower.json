@@ -6,7 +6,7 @@
     "maliMirkec <malimirkeccita@gmail.com>"
   ],
   "description": "Flexbox grid system for modern web app.",
-  "main": "cita-flex.css",
+  "main": "./css/dist/cita-flex.min.css",
   "moduleType": [],
   "keywords": [
     "cita",
