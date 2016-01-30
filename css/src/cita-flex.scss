@@ -166,6 +166,10 @@
 	.flex-box {
 		@include flex;
 		
+		&.flex-box-no-grow {
+			flex-grow: 0;
+		}
+		
 		&.flex-box-center {
 			@include justify(center);
 			@include item(center);

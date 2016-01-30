@@ -24,8 +24,7 @@
 				<div class="flex-box flex-box-center">2</div>
 				<div class="flex-box flex-box-center">3</div>
 				<div class="flex-box flex-box-center">4</div>
-				<div class="flex-box flex-box-center">5</div>
-				<div class="flex-box flex-box-center">6</div>
+				<div class="flex-box flex-box-no-grow flex-box-center">5</div>
 		  </div>
 		  <div class="flex-box flex-box-center">5</div>
 		  <div class="flex-box flex-box-center">6</div>
