@@ -31,7 +31,13 @@
 }
 
 @mixin flex-basis($basis) {
-	flex-basis: calc(100% / #{$basis}) !important;
+	flex-basis: calc(100% / #{$basis});
+}
+
+.flex-center {
+	@include justify(center);
+	@include content(center);
+	@include item(center);
 }
 
 .flex-container {
@@ -170,15 +176,9 @@
 			flex-grow: 0;
 		}
 		
-		&.flex-box-center {
-			@include justify(center);
-			@include item(center);
-		}
-		
 		&.flex-align-self {
 			@include self(stretch);
 		}
-
 	
 		$flexbox-iterator: 6;
 		

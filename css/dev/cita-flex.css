@@ -1,3 +1,16 @@
+.flex-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,35 +82,30 @@
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start; }
   .flex-container.flex-item-end,
   .flex-container .flex-item-end {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end; }
   .flex-container.flex-item-center,
   .flex-container .flex-item-center {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center; }
   .flex-container.flex-item-stretch,
   .flex-container .flex-item-stretch {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
-                -ms-grid-row-align: stretch;
             align-items: stretch; }
   .flex-container.flex-item-baseline,
   .flex-container .flex-item-baseline {
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
-                -ms-grid-row-align: baseline;
             align-items: baseline; }
   .flex-container.flex-content-start,
   .flex-container .flex-content-start {
@@ -130,53 +138,53 @@
         -ms-flex-line-pack: distribute;
             align-content: space-around; }
   .flex-container.flex-container-12 > .flex-box {
-    -webkit-flex-basis: calc(100% / 12) !important;
-        -ms-flex-preferred-size: calc(100% / 12) !important;
-            flex-basis: calc(100% / 12) !important; }
+    -webkit-flex-basis: calc(100% / 12);
+        -ms-flex-preferred-size: calc(100% / 12);
+            flex-basis: calc(100% / 12); }
   .flex-container.flex-container-11 > .flex-box {
-    -webkit-flex-basis: calc(100% / 11) !important;
-        -ms-flex-preferred-size: calc(100% / 11) !important;
-            flex-basis: calc(100% / 11) !important; }
+    -webkit-flex-basis: calc(100% / 11);
+        -ms-flex-preferred-size: calc(100% / 11);
+            flex-basis: calc(100% / 11); }
   .flex-container.flex-container-10 > .flex-box {
-    -webkit-flex-basis: calc(100% / 10) !important;
-        -ms-flex-preferred-size: calc(100% / 10) !important;
-            flex-basis: calc(100% / 10) !important; }
+    -webkit-flex-basis: calc(100% / 10);
+        -ms-flex-preferred-size: calc(100% / 10);
+            flex-basis: calc(100% / 10); }
   .flex-container.flex-container-9 > .flex-box {
-    -webkit-flex-basis: calc(100% / 9) !important;
-        -ms-flex-preferred-size: calc(100% / 9) !important;
-            flex-basis: calc(100% / 9) !important; }
+    -webkit-flex-basis: calc(100% / 9);
+        -ms-flex-preferred-size: calc(100% / 9);
+            flex-basis: calc(100% / 9); }
   .flex-container.flex-container-8 > .flex-box {
-    -webkit-flex-basis: calc(100% / 8) !important;
-        -ms-flex-preferred-size: calc(100% / 8) !important;
-            flex-basis: calc(100% / 8) !important; }
+    -webkit-flex-basis: calc(100% / 8);
+        -ms-flex-preferred-size: calc(100% / 8);
+            flex-basis: calc(100% / 8); }
   .flex-container.flex-container-7 > .flex-box {
-    -webkit-flex-basis: calc(100% / 7) !important;
-        -ms-flex-preferred-size: calc(100% / 7) !important;
-            flex-basis: calc(100% / 7) !important; }
+    -webkit-flex-basis: calc(100% / 7);
+        -ms-flex-preferred-size: calc(100% / 7);
+            flex-basis: calc(100% / 7); }
   .flex-container.flex-container-6 > .flex-box {
-    -webkit-flex-basis: calc(100% / 6) !important;
-        -ms-flex-preferred-size: calc(100% / 6) !important;
-            flex-basis: calc(100% / 6) !important; }
+    -webkit-flex-basis: calc(100% / 6);
+        -ms-flex-preferred-size: calc(100% / 6);
+            flex-basis: calc(100% / 6); }
   .flex-container.flex-container-5 > .flex-box {
-    -webkit-flex-basis: calc(100% / 5) !important;
-        -ms-flex-preferred-size: calc(100% / 5) !important;
-            flex-basis: calc(100% / 5) !important; }
+    -webkit-flex-basis: calc(100% / 5);
+        -ms-flex-preferred-size: calc(100% / 5);
+            flex-basis: calc(100% / 5); }
   .flex-container.flex-container-4 > .flex-box {
-    -webkit-flex-basis: calc(100% / 4) !important;
-        -ms-flex-preferred-size: calc(100% / 4) !important;
-            flex-basis: calc(100% / 4) !important; }
+    -webkit-flex-basis: calc(100% / 4);
+        -ms-flex-preferred-size: calc(100% / 4);
+            flex-basis: calc(100% / 4); }
   .flex-container.flex-container-3 > .flex-box {
-    -webkit-flex-basis: calc(100% / 3) !important;
-        -ms-flex-preferred-size: calc(100% / 3) !important;
-            flex-basis: calc(100% / 3) !important; }
+    -webkit-flex-basis: calc(100% / 3);
+        -ms-flex-preferred-size: calc(100% / 3);
+            flex-basis: calc(100% / 3); }
   .flex-container.flex-container-2 > .flex-box {
-    -webkit-flex-basis: calc(100% / 2) !important;
-        -ms-flex-preferred-size: calc(100% / 2) !important;
-            flex-basis: calc(100% / 2) !important; }
+    -webkit-flex-basis: calc(100% / 2);
+        -ms-flex-preferred-size: calc(100% / 2);
+            flex-basis: calc(100% / 2); }
   .flex-container.flex-container-1 > .flex-box {
-    -webkit-flex-basis: calc(100% / 1) !important;
-        -ms-flex-preferred-size: calc(100% / 1) !important;
-            flex-basis: calc(100% / 1) !important; }
+    -webkit-flex-basis: calc(100% / 1);
+        -ms-flex-preferred-size: calc(100% / 1);
+            flex-basis: calc(100% / 1); }
   .flex-container.flex-fill .flex-box {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -192,16 +200,6 @@
       -webkit-flex-grow: 0;
           -ms-flex-positive: 0;
               flex-grow: 0; }
-    .flex-container .flex-box.flex-box-center {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center; }
     .flex-container .flex-box.flex-align-self {
       -webkit-align-self: stretch;
           -ms-flex-item-align: stretch;
