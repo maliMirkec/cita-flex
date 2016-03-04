@@ -15,7 +15,11 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0%;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%; }
 
 .flex-box--no-grow {
   -webkit-box-flex: 0;
@@ -205,61 +209,73 @@
           align-content: space-around; }
 
 .flex-container--12 > .flex-box {
-  -webkit-flex-basis: calc(100% / 12);
-      -ms-flex-preferred-size: calc(100% / 12);
-          flex-basis: calc(100% / 12); }
+  width: 8.33333%;
+  -webkit-flex-basis: 8.33333%;
+      -ms-flex-preferred-size: 8.33333%;
+          flex-basis: 8.33333%; }
 
 .flex-container--11 > .flex-box {
-  -webkit-flex-basis: calc(100% / 11);
-      -ms-flex-preferred-size: calc(100% / 11);
-          flex-basis: calc(100% / 11); }
+  width: 9.09091%;
+  -webkit-flex-basis: 9.09091%;
+      -ms-flex-preferred-size: 9.09091%;
+          flex-basis: 9.09091%; }
 
 .flex-container--10 > .flex-box {
-  -webkit-flex-basis: calc(100% / 10);
-      -ms-flex-preferred-size: calc(100% / 10);
-          flex-basis: calc(100% / 10); }
+  width: 10%;
+  -webkit-flex-basis: 10%;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%; }
 
 .flex-container--9 > .flex-box {
-  -webkit-flex-basis: calc(100% / 9);
-      -ms-flex-preferred-size: calc(100% / 9);
-          flex-basis: calc(100% / 9); }
+  width: 11.11111%;
+  -webkit-flex-basis: 11.11111%;
+      -ms-flex-preferred-size: 11.11111%;
+          flex-basis: 11.11111%; }
 
 .flex-container--8 > .flex-box {
-  -webkit-flex-basis: calc(100% / 8);
-      -ms-flex-preferred-size: calc(100% / 8);
-          flex-basis: calc(100% / 8); }
+  width: 12.5%;
+  -webkit-flex-basis: 12.5%;
+      -ms-flex-preferred-size: 12.5%;
+          flex-basis: 12.5%; }
 
 .flex-container--7 > .flex-box {
-  -webkit-flex-basis: calc(100% / 7);
-      -ms-flex-preferred-size: calc(100% / 7);
-          flex-basis: calc(100% / 7); }
+  width: 14.28571%;
+  -webkit-flex-basis: 14.28571%;
+      -ms-flex-preferred-size: 14.28571%;
+          flex-basis: 14.28571%; }
 
 .flex-container--6 > .flex-box {
-  -webkit-flex-basis: calc(100% / 6);
-      -ms-flex-preferred-size: calc(100% / 6);
-          flex-basis: calc(100% / 6); }
+  width: 16.66667%;
+  -webkit-flex-basis: 16.66667%;
+      -ms-flex-preferred-size: 16.66667%;
+          flex-basis: 16.66667%; }
 
 .flex-container--5 > .flex-box {
-  -webkit-flex-basis: calc(100% / 5);
-      -ms-flex-preferred-size: calc(100% / 5);
-          flex-basis: calc(100% / 5); }
+  width: 20%;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; }
 
 .flex-container--4 > .flex-box {
-  -webkit-flex-basis: calc(100% / 4);
-      -ms-flex-preferred-size: calc(100% / 4);
-          flex-basis: calc(100% / 4); }
+  width: 25%;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
 
 .flex-container--3 > .flex-box {
-  -webkit-flex-basis: calc(100% / 3);
-      -ms-flex-preferred-size: calc(100% / 3);
-          flex-basis: calc(100% / 3); }
+  width: 33.33333%;
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%; }
 
 .flex-container--2 > .flex-box {
-  -webkit-flex-basis: calc(100% / 2);
-      -ms-flex-preferred-size: calc(100% / 2);
-          flex-basis: calc(100% / 2); }
+  width: 50%;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
 
 .flex-container--1 > .flex-box {
-  -webkit-flex-basis: calc(100% / 1);
-      -ms-flex-preferred-size: calc(100% / 1);
-          flex-basis: calc(100% / 1); }
+  width: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }

@@ -31,7 +31,9 @@
 }
 
 @mixin flex-basis($basis) {
-	flex-basis: calc(100% / #{$basis});
+	$w : 100 / $basis;
+	width: #{$w}%;
+	flex-basis: #{$w}%;
 }
 
 .flex-center {
@@ -42,6 +44,7 @@
 
 .flex-box {
 	@include flex;
+	@include flexbox(1 0 0%);
 }
 
 .flex-box--no-grow {
