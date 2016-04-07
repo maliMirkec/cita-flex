@@ -1,0 +1,139 @@
+.flex-center {
+	@include flex-center;
+}
+
+.flex-box {
+	@include flex-box;
+}
+
+.flex-box--no-grow {
+	@include flex-box--no-grow;
+}
+
+.flex-box--align-self {
+	@include flex-box--align-self;
+}
+
+$flexbox-iterator: 6;
+
+@while $flexbox-iterator > 0 {
+	.flex-box--#{$flexbox-iterator} {
+		@include flexbox($flexbox-iterator);
+	}
+	
+	$flexbox-iterator: $flexbox-iterator - 1;
+}
+
+.flex-container {
+	@include flex-container;
+}
+
+.flex-container--half-page {
+	@include flex-container--half-page;
+}
+
+.flex-container--full-page {
+	@include flex-container--full-page;
+}
+
+.flex-container--row {
+	@include flex-container--row;
+}
+
+.flex-container--row-reverse {
+	@include flex-container--row-reverse;
+}
+
+.flex-container--column {
+	@include flex-container--column;
+}
+
+.flex-container--column-reverse {
+	@include flex-container--column-reverse;
+}
+
+.flex-container--wrap {
+	@include flex-container--wrap;
+}
+
+.flex-container--fill {
+	.flex-container--fill {
+		@include flex-box;
+	}
+}
+
+.flex-justify--start {
+	@include flex-justify--start;
+}
+
+.flex-justify--end {
+	@include flex-justify--end;
+}
+
+.flex-justify--center {
+	@include flex-justify--center;
+}
+
+.flex-justify--space-between {
+	@include flex-justify--space-between;
+}
+
+.flex-justify--space-around {
+	@include flex-justify--space-around;
+}
+
+.flex-item--start {
+	@include flex-item--start;
+}
+
+.flex-item--end {
+	@include flex-item--end;
+}
+
+.flex-item--center {
+	@include flex-item--center;
+}
+
+.flex-item--stretch {
+	@include flex-item--stretch;
+}
+
+.flex-item--baseline {
+	@include flex-item--baseline;
+}
+
+.flex-content--start {
+	@include flex-content--start;
+}
+
+.flex-content--end {
+	@include flex-content--end;
+}
+
+.flex-content--center {
+	@include flex-content--center;
+}
+
+.flex-content--stretch {
+	@include flex-content--stretch;
+}
+
+.flex-content--space-between {
+	@include flex-content--space-between;
+}
+
+.flex-content--space-around {
+	@include flex-content--space-around;
+}
+
+$basis-iterator: 12;
+
+@while $basis-iterator > 0 {
+	.flex-container--#{$basis-iterator} {
+		> .flex-box {
+			@include flex-basis($basis-iterator);
+		}
+	}
+	
+	$basis-iterator: $basis-iterator - 1;
+}

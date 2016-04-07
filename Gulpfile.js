@@ -10,7 +10,7 @@ var rename       = require('gulp-rename');
 var gulpSequence = require('gulp-sequence');
  
 gulp.task('dev', function() {
-  return gulp.src('./css/src/*.scss')
+  return gulp.src('./css/inc/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./css/dev'));
@@ -26,6 +26,6 @@ gulp.task('dist', function() {
 gulp.task('default', gulpSequence('dev', 'dist'));
  
 gulp.task('default:watch', function() {
-  gulp.watch('./css/src/*.scss', ['dev']);
+  gulp.watch(['./css/inc/*.scss', './css/src/*.scss'], ['dev']);
   gulp.watch('./css/dev/*.css', ['dist']);
 });
