@@ -36,22 +36,22 @@
 	flex-basis: #{$w}%;
 }
 
-.flex-center {
+@mixin flex-center {
 	@include justify(center);
 	@include content(center);
 	@include item(center);
 }
 
-.flex-box {
+@mixin flex-box {
 	@include flex;
 	@include flexbox(1 1 auto);
 }
 
-.flex-box--no-grow {
+@mixin flex-box--no-grow {
 	flex-grow: 0;
 }
 
-.flex-box--align-self {
+@mixin flex-box--align-self {
 	@include self(stretch);
 }
 
@@ -65,105 +65,99 @@ $flexbox-iterator: 6;
 	$flexbox-iterator: $flexbox-iterator - 1;
 }
 
-.flex-container {
+@mixin flex-container {
 	@include flex;
 }
 
-.flex-container--half-page {
+@mixin flex-container--half-page {
 	height: 50vh;
 }
 
-.flex-container--full-page {
+@mixin flex-container--full-page {
 	height: 100vh;
 }
 
-.flex-container--row {
+@mixin flex-container--row {
 	@include direction(row);
 }
 
-.flex-container--row-reverse {
+@mixin flex-container--row-reverse {
 	@include direction(row-reverse);
 }
 
-.flex-container--column {
+@mixin flex-container--column {
 	@include direction(column);
 }
 
-.flex-container--column-reverse {
+@mixin flex-container--column-reverse {
 	@include direction(column-reverse);
 }
 
-.flex-container--wrap {
+@mixin flex-container--wrap {
 	@include wrap(wrap);
 }
 
-.flex-container--fill {
-	.flex-box {
-		@include flexbox(1);
-	}
-}
-
-.flex-justify--start {
+@mixin flex-justify--start {
 	@include justify(flex-start);
 }
 
-.flex-justify--end {
+@mixin flex-justify--end {
 	@include justify(flex-end);
 }
 
-.flex-justify--center {
+@mixin flex-justify--center {
 	@include justify(center);
 }
 
-.flex-justify--space-between {
+@mixin flex-justify--space-between {
 	@include justify(space-between);
 }
 
-.flex-justify--space-around {
+@mixin flex-justify--space-around {
 	@include justify(space-around);
 }
 
-.flex-item--start {
+@mixin flex-item--start {
 	@include item(flex-start);
 }
 
-.flex-item--end {
+@mixin flex-item--end {
 	@include item(flex-end);
 }
 
-.flex-item--center {
+@mixin flex-item--center {
 	@include item(center);
 }
 
-.flex-item--stretch {
+@mixin flex-item--stretch {
 	@include item(stretch);
 }
 
-.flex-item--baseline {
+@mixin flex-item--baseline {
 	@include item(baseline);
 }
 
-.flex-content--start {
+@mixin flex-content--start {
 	@include content(flex-start);
 }
 
-.flex-content--end {
+@mixin flex-content--end {
 	@include content(flex-end);
 }
 
-.flex-content--center {
+@mixin flex-content--center {
 	@include content(center);
 }
 
-.flex-content--stretch {
+@mixin flex-content--stretch {
 	@include content(stretch);
 }
 
-.flex-content--space-between {
+@mixin flex-content--space-between {
 	@include content(space-between);
 }
 
-.flex-content--space-around {
+@mixin flex-content--space-around {
 	@include content(space-around);
 }
 
