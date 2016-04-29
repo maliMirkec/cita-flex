@@ -32,8 +32,8 @@
 
 @mixin flex-basis($basis) {
 	$w : 100 / $basis;
-	width: #{$w}%;
-	flex-basis: #{$w}%;
+	width: $w * 1%;
+	flex-basis: $w * 1%;
 }
 
 @mixin flex-center {
@@ -171,4 +171,37 @@ $basis-iterator: 12;
 	}
 	
 	$basis-iterator: $basis-iterator - 1;
+}
+
+@mixin margin-top-auto {
+	margin-top: auto;
+}
+
+@mixin margin-right-auto {
+	margin-right: auto;
+}
+
+@mixin margin-bottom-auto {
+	margin-bottom: auto;
+}
+
+@mixin margin-left-auto {
+	margin-left: auto;
+}
+
+@mixin margin-auto-x {
+	@include margin-left-auto;
+	@include margin-right-auto;
+}
+
+@mixin margin-auto-y {
+	@include margin-top-auto;
+	@include margin-bottom-auto;
+}
+
+@mixin margin-auto {
+	@include margin-top-auto;
+	@include margin-right-auto;
+	@include margin-bottom-auto;
+	@include margin-left-auto;
 }
