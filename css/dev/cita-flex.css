@@ -397,3 +397,29 @@
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; }
+
+.margin-top-auto {
+  margin-top: auto; }
+
+.margin-right-auto {
+  margin-right: auto; }
+
+.margin-bottom-auto {
+  margin-bottom: auto; }
+
+.margin-left-auto {
+  margin-left: auto; }
+
+.margin-auto-x {
+  margin-left: auto;
+  margin-right: auto; }
+
+.margin-auto-y {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.margin-auto {
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto; }

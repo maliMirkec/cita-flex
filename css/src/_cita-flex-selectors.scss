@@ -137,3 +137,31 @@ $basis-iterator: 12;
 	
 	$basis-iterator: $basis-iterator - 1;
 }
+
+.margin-top-auto {
+	@include margin-top-auto;
+}
+
+.margin-right-auto {
+	@include margin-right-auto;
+}
+
+.margin-bottom-auto {
+	@include margin-bottom-auto;
+}
+
+.margin-left-auto {
+	@include margin-left-auto;
+}
+
+.margin-auto-x {
+	@include margin-auto-x;
+}
+
+.margin-auto-y {
+	@include margin-auto-y;
+}
+
+.margin-auto {
+	@include margin-auto;
+}
