@@ -30,10 +30,17 @@
 	flex: $flex;
 }
 
-@mixin flex-basis($basis) {
-	$w : 100 / $basis;
-	width: $w * 1%;
-	flex-basis: $w * 1%;
+@mixin flex-basis($basis, $spacing: false) {
+	@if $spacing == false {
+    $w : 100 / $basis;
+    width: $w * 1%;
+    flex-basis: $w * 1%;
+	} @else {
+    $w : 100 / $basis;
+    $s : $spacing * $basis;
+    width: calc(#{$w} * 1% - #{$s});
+    flex-basis: calc(#{$w} * 1% - #{$s});
+  }
 }
 
 @mixin flex-center {
