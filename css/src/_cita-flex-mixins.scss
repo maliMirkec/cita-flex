@@ -37,7 +37,7 @@
     flex-basis: $w * 1%;
 	} @else {
     $w : 100 / $basis;
-    $s : $spacing * $basis;
+    $s : $spacing * ($basis - 1) / $basis;
     width: calc(#{$w} * 1% - #{$s});
     flex-basis: calc(#{$w} * 1% - #{$s});
   }
