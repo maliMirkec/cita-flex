@@ -20,7 +20,7 @@ $flexbox-iterator: 6;
 	.flex-box--#{$flexbox-iterator} {
 		@include flexbox($flexbox-iterator);
 	}
-	
+
 	$flexbox-iterator: $flexbox-iterator - 1;
 }
 
@@ -134,7 +134,7 @@ $basis-iterator: 12;
 			@include flex-basis($basis-iterator);
 		}
 	}
-	
+
 	$basis-iterator: $basis-iterator - 1;
 }
 
