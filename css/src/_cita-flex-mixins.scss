@@ -32,15 +32,15 @@
 
 @mixin flex-basis($basis, $spacing: false) {
 	@if $spacing == false {
-    $w : 100 / $basis;
-    width: $w * 1%;
-    flex-basis: $w * 1%;
+		$w : 100 / $basis;
+		width: $w * 1%;
+		flex-basis: $w * 1%;
 	} @else {
-    $w : 100 / $basis;
-    $s : $spacing * ($basis - 1) / $basis;
-    width: calc(#{$w} * 1% - #{$s});
-    flex-basis: calc(#{$w} * 1% - #{$s});
-  }
+		$w : 100 / $basis;
+		$s : $spacing * ($basis - 1) / $basis;
+		width: calc(#{$w} * 1% - #{$s});
+		flex-basis: calc(#{$w} * 1% - #{$s});
+	}
 }
 
 @mixin flex-center {
@@ -60,16 +60,6 @@
 
 @mixin flex-box--align-self {
 	@include self(stretch);
-}
-
-$flexbox-iterator: 6;
-
-@while $flexbox-iterator > 0 {
-	.flex-box--#{$flexbox-iterator} {
-		@include flexbox($flexbox-iterator);
-	}
-	
-	$flexbox-iterator: $flexbox-iterator - 1;
 }
 
 @mixin flex-container {
@@ -166,18 +156,6 @@ $flexbox-iterator: 6;
 
 @mixin flex-content--space-around {
 	@include content(space-around);
-}
-
-$basis-iterator: 12;
-
-@while $basis-iterator > 0 {
-	.flex-container--#{$basis-iterator} {
-		> .flex-box {
-			@include flex-basis($basis-iterator);
-		}
-	}
-	
-	$basis-iterator: $basis-iterator - 1;
 }
 
 @mixin margin-top-auto {
