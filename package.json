@@ -1,8 +1,8 @@
 {
   "name": "cita-flex",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Flexbox grid for modern layout.",
-  "main": "Gulpfile.js",
+  "main": "./css/dev/cita-flex.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +26,7 @@
     "es6-promise": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
+    "gulp-bump": "latest",
     "gulp-minify-css": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",

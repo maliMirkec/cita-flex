@@ -1,12 +1,12 @@
 {
   "name": "cita-flex",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "homepage": "https://github.com/maliMirkec/cita-flex",
   "authors": [
     "maliMirkec <malimirkeccita@gmail.com>"
   ],
   "description": "Flexbox grid system for modern web app.",
-  "main": "./css/dist/cita-flex.min.css",
+  "main": "./css/dev/cita-flex.css",
   "moduleType": [],
   "keywords": [
     "cita",
