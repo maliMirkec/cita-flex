@@ -1,6 +1,6 @@
 {
   "name": "cita-flex",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Flexbox grid for modern layout.",
   "main": "Gulpfile.js",
   "scripts": {
