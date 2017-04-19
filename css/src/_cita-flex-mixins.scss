@@ -27,20 +27,26 @@
 }
 
 @mixin flexbox($flex) {
-	flex: $flex;
+	@if $flex == 0 {
+		flex: 0 0 auto;
+	} @else if $flex == 1 {
+		flex: 1 1 auto;
+	}  @else {
+		flex: $flex;
+	}
 }
 
 @mixin flex-basis($basis, $spacing: false) {
 	@if $spacing == false {
 		$w : 100 / $basis;
 		width: $w * 1%;
-		flex-basis: $w * 1%;
 	} @else {
 		$w : 100 / $basis;
 		$s : $spacing * ($basis - 1) / $basis;
 		width: calc(#{$w} * 1% - #{$s});
-		flex-basis: calc(#{$w} * 1% - #{$s});
 	}
+	
+	flex-basis: auto;
 }
 
 @mixin flex-center {
