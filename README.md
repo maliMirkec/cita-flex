@@ -1,6 +1,10 @@
 # cita-flex
 Flexbox grid for modern layout.
 
+## Demo
+
+[Codepen demo](http://codepen.io/CiTA/full/NGMJZM/)
+
 ## Installation
 
 `bower install cita-flex`
